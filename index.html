@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Objective response</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script>
+        generate = function () {
+            var count = 100;
+            for (var i = 1; i <= 100; i++) {
+                document.write(
+    '<div class="well well-sm"><label>Q '+i+'&nbsp&nbsp</label> \
+    <label class="radio-inline"> \
+          <input type="radio" name="optradio'+i+'">A&nbsp&nbsp \
+    </label> \
+    <label class="radio-inline"> \
+          <input type="radio" name="optradio'+i+'">B&nbsp&nbsp \
+    </label> \
+    <label class="radio-inline"> \
+          <input type="radio" name="optradio'+i+'">C&nbsp&nbsp \
+    </label> \
+    <label class="radio-inline"> \
+          <input type="radio" name="optradio'+i+'">D&nbsp&nbsp \
+    </label></div>'
+
+);
+
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+    
+    <form class="">
+    <script>
+    generate()
+    </script>
+    </form>
+    </div>
+    
+</body>
